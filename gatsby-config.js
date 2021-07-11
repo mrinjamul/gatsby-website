@@ -5,6 +5,9 @@
  */
 
 module.exports = {
+  siteMetadata: {
+    title: "My Website",
+  },
   /* Your site config here */
-  plugins: [],
+  plugins: ["gatsby-plugin-image", "gatsby-plugin-sharp"],
 }
