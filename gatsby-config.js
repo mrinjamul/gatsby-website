@@ -6,8 +6,18 @@
 
 module.exports = {
   siteMetadata: {
-    title: "My Website",
+    title: "My Super Cool Blog",
   },
   /* Your site config here */
-  plugins: ["gatsby-plugin-image", "gatsby-plugin-sharp"],
+  plugins: [
+    "gatsby-plugin-image",
+    "gatsby-plugin-sharp",
+    {
+      resolve: "gatsby-source-filesystem",
+      options: {
+        name: `blog`,
+        path: `${__dirname}/blog`,
+      },
+    },
+  ],
 }
